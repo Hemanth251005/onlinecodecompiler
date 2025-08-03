@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi-language Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+</head> 
+<body>
+
+  <div class="top-bar">
+    <h2>Online Code Editor (HTML, JS, C, Python, Java)</h2>
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="typing" id="motiveText">Keep building. Keep improving. Code is your superpower!</div>
+
+  <label for="language">Select Language:</label>
+  <select id="language">
+    <option value="html">HTML</option>
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="c">C</option>
+    <option value="java">Java</option> 
+  </select>
+
+  <label for="code">Enter your code:</label>
+  <textarea id="code" rows="12" placeholder="Write your code here..."></textarea>
+
+  <button onclick="runCode()">Run</button>
+
+  <h3>Output:</h3>
+  <pre id="output"></pre>
+  <script src="script.js"></script>
+  <div class="tech-animation"></div>
+
+</body>
+</html>
